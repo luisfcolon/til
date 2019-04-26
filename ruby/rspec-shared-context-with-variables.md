@@ -26,7 +26,7 @@ class CanPersonEnterBar
 end
 ```
 
-Rspec to test `CanPersonEnterBar`. Since `person` is passed in, we are going to stub it. I don't want too much code contexts, so I created a shared one and will pass it variables to control the tests.
+Rspec to test `CanPersonEnterBar`. Since `person` is passed in, we are going to stub it. I don't want too much prep code in my contexts - so I created a shared one and will pass it variables to control the tests.
 
 ```ruby
 describe CanPersonEnterBar do
