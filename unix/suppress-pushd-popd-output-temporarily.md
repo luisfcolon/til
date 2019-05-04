@@ -38,7 +38,7 @@ popd() {
 }
 
 # the code we are executing here
-# use pushd and pop like you normally would
+# use pushd and popd like you normally would
 
 unset -f pushd
 unset -f popd
