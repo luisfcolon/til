@@ -5,10 +5,10 @@ This requires using [psycopg2](https://github.com/psycopg/psycopg2)
 ```python
 import psycopg2
 
-"""
+'''
 Initialize your datbase connection
 Get the cursor and connection
-"""
+'''
 
 # Dictionary that matches the database table
 table = 'users'
