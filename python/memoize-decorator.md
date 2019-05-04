@@ -1,6 +1,8 @@
 # Memoize decorator
 
-This is super duper simple memoize class. May not work for all cases. It is intended to decorate functions that are **idempotent**. My first use was for a restful api call using an id.
+This is a super duper simple memoize class. May not work for all cases. It is intended to decorate functions that are **[idempotent](https://en.wikipedia.org/wiki/Idempotence)**. 
+
+My first use was for a restful GET api call using an id.
 
 ```python
 class Memoize:
