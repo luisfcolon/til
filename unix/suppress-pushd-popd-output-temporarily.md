@@ -1,4 +1,4 @@
-# Supress pushd and popd output
+# Suppress pushd and popd output
 
 If you have a bash script that has ton of processing and heavily use the `pushd` and `popd` commands to switch directories - it will output everytime each one is called.
 
