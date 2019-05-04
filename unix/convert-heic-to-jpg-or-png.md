@@ -12,5 +12,5 @@ brew install imagemagick
 
 ```bash
 magick convert IMG_1234.HEIC new_image_name.jpg  # convert to jpg
-magick convert IMG_1234.HEIC new_image_name.png. # convert to png
+magick convert IMG_1234.HEIC new_image_name.png  # convert to png
 ```
