@@ -4,7 +4,7 @@ If you have a bash script that has ton of processing and heavily use the `pushd`
 
 `pushd` will print the directory we are going to and the current directory.
 
-```
+```terminal
 ~/Workspace/projects/tutorials/til/unix
 $ pushd ~/Downloads
 ~/Downloads ~/Workspace/projects/tutorials/til/unix
@@ -15,7 +15,7 @@ $
 
 `popd` will display the directoy we are going back to
 
-```
+```terminal
 ~/Downloads
 $ popd
 ~/Workspace/projects/tutorials/til/unix
@@ -38,12 +38,13 @@ popd() {
 }
 
 # the code we are executing here
+# use pushd and pop like you normally would
 
 unset -f pushd
 unset -f popd
 ```
 
 * Create a function that overrides the system command
-* Call the default system command and send the output to `/dev/null`
+* Call the override function that sends the output to `/dev/null`
 * Run the code
 * Remove the override functions to restore default functionality
