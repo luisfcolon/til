@@ -72,4 +72,4 @@ connection.close()
 
 The sql string is using `%s` as placeholders that are sanitized to prevent sql injection.
 
-The `values` you pass to `mogrify` or `execute` have the match the order of the `%s` placeholders in the sql string. This is why we pop off the record id and append it to the end of the `values` list. The last `%s` in the sql string is `where id = %s`.
+The `values` you pass to `mogrify` or `execute` have to match the order of the `%s` placeholders in the sql string. This is why we pop off the record id and append it to the end of the `values` list. The last `%s` in the sql string is `where id = %s`.
