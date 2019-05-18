@@ -105,6 +105,8 @@ pick 8c7ae81 Squashed commit we want to keep
 
 ## Notes
 
+### FYI: This will rewrite your git history
+
 Before you can force push, you need to delete any protection rules you have on the `develop` branch via github.
 
 ![alt text](./images/github-branch-protection-rules.png)
