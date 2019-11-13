@@ -1,4 +1,4 @@
-# Bash function to create new git branch
+# Bash function to create a new git branch
 
 ## Code
 
