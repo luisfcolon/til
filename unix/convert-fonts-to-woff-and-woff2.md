@@ -14,6 +14,7 @@ Convert `.ttf` and `.otf` fonts to `.woff` and `.woff2` formats.
 ### Creating .woff
 
 ```
+cd sfpro
 find . -name '*.otf' -exec sfnt2woff-zopfli {} \;
 ```
 
