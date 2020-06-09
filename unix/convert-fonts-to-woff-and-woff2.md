@@ -33,9 +33,9 @@ for file in fonts/*.otf; do woff2_compress "$file"; done
 
 ### Notes
 
-This will create the same font names with new extensions.
-
-* Example: `MyFont.otf` will become `MyFont.woff` and `MyFont.woff2`
+* `.woff` files can be slow to generate
+* This will create the same font names with new extensions.
+    * Example: `MyFont.otf` will become `MyFont.woff` and `MyFont.woff2`
 
 ## Todo
 
