@@ -11,8 +11,23 @@ Clone the following repos and follow their directions. Copy the files created fr
 
 ## Instructions
 
+### Single font
 
-### Creating .woff
+#### Creating .woff
+
+```
+sfnt2woff-zopfli some_font.otf
+```
+
+#### Creating .woff2
+
+```
+woff2_compress some_font.otf
+```
+
+### Directory of fonts
+
+#### Creating .woff
 
 `fonts` is the directory where the fonts are located
 
@@ -21,7 +36,7 @@ cd fonts
 find . -name '*.otf' -exec sfnt2woff-zopfli {} \;
 ```
 
-### Creating .woff2
+#### Creating .woff2
 
 `fonts` is the directory where the fonts are loca
 ted
