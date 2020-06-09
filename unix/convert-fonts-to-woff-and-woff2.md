@@ -5,7 +5,8 @@ Convert `.ttf` and `.otf` fonts to `.woff` and `.woff2` formats.
 ## Requirements:
 
 Clone the following repos and follow their directions. 
-Copy the files created from any `make` commands to `/usr/localbin`
+Copy the files created from any `make` commands to `/usr/local/bin`.
+You will need to have `/usr/local/bin` in your `$PATH`.
 
 * https://github.com/bramstein/sfnt2woff-zopfli
 * https://github.com/google/woff2
