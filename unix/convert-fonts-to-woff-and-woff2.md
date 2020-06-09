@@ -4,12 +4,14 @@ Convert `.ttf` and `.otf` fonts to `.woff` and `.woff2` formats.
 
 ## Requirements:
 
+Clone the following repos and follow their directions. 
+Copy the files created from any `make` commands to `/usr/localbin`
+
 * https://github.com/bramstein/sfnt2woff-zopfli
 * https://github.com/google/woff2
 
 ## Instructions
 
-Clone the above repos and follow their directions. Copy the files created from the `make` commands to `/usr/localbin`
 
 ### Creating .woff
 
@@ -22,7 +24,8 @@ find . -name '*.otf' -exec sfnt2woff-zopfli {} \;
 
 ### Creating .woff2
 
-`fonts` is the directory where the fonts are located
+`fonts` is the directory where the fonts are loca
+ted
 
 ```
 for file in fonts/*.otf; do woff2_compress "$file"; done
@@ -38,4 +41,7 @@ This will create the same font names with new extensions.
 
 * Be able to generate both `.woff` and `.woff2` at the same time.
 * Select an output directory
-* Allow ability to change the new font names
+* Allow custom new font names
+* Better CLI tool?
+* Electron app?
+* React app?
