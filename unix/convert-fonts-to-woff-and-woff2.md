@@ -22,3 +22,9 @@ find . -name '*.otf' -exec sfnt2woff-zopfli {} \;
 ```
 for file in sfpro/*.otf; do woff2_compress "$file"; done
 ```
+
+### Notes
+
+This will create the same font names with the new extensions.
+
+* Example: `MyFont.otf` will become `MyFont.woff` and `MyFont.woff2`
