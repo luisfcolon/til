@@ -1,4 +1,4 @@
-# Database migration pid locks
+# Rails database migration Postgres locks
 
 When a database migration runs, it sets a ppostgres lock. This prevents two sets of migrations from running against the database at the same time. If the database connection times out or is lost before the migration is complete:
 
