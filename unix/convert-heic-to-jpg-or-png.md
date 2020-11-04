@@ -14,3 +14,11 @@ brew install imagemagick
 magick convert IMG_1234.HEIC new_image_name.jpg  # convert to jpg
 magick convert IMG_1234.HEIC new_image_name.png  # convert to png
 ```
+
+## Bulk converting
+
+Note: This will remove the `.HEIC` file
+
+```bash
+for filename in *.HEIC; do base="${filename%.[^.]*}"; magick convert $filename $base.jpg; rm $filename; done
+```
