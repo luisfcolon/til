@@ -11,9 +11,10 @@ slugify() {
 
 cb() {
   local description=$(slugify $2)
+  default_branch="develop"
 
   if [ -z "$3" ]; then
-    gc -b $1-${description} origin/edge
+    gc -b $1-${description} origin/$default_branch
   else
     gc -b $1-${description} origin/$3
   fi
