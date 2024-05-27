@@ -4,7 +4,7 @@ I was migrating a microservice from heroku to aws and needed to take a list of e
 
 ```bash
 printenv > env_vars.txt
-cat env_vars.txt | jo -p > aws_secrets_manager.json
+cat env_vars.txt | jo -p > env_vars.json
 ```
 
 After the json file is created, replace any occurences of `null` with `""` or the json payload cannot be parsed into individual secret values in aws.

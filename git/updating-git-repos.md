@@ -4,11 +4,12 @@ At my current job, I work on several repos. Keeping them all up-to-date started 
 
 I coded this bash function to do it for me.
 
-Most of the repos I work on have the common flow of `develop -> staging -> master`. Those repo names go into `declare -a repos` portion of the script.
+Most of the repos I work on have the common flow of `develop -> staging -> main`. Those repo names go into `declare -a repos` portion of the script.
 
 Some of the repos only have a master branch. Those repo names go into the `declare -a master_only_repos` portion of the script.
 
-## 
+##
+
 ```bash
 #!/usr/bin/env bash
 
@@ -27,13 +28,13 @@ update-work-repos() {
     "cool-repo-7"
   )
 
-  declare -a master_only_repos=(
-    "repo-with-only-master-1"
-    "repo-with-only-master-2"
+  declare -a main_only_repos=(
+    "repo-with-only-main-1"
+    "repo-with-only-main-2"
   )
 
   declare -a branches=(
-    "master"
+    "main"
     "staging"
     "develop"
   )
@@ -59,17 +60,17 @@ update-work-repos() {
     echo
   done
 
-  for repo in "${master_only_repos[@]}"
+  for repo in "${main_only_repos[@]}"
   do
     echo_header $repo
-    echo_info "master"
+    echo_info "main"
 
     pushd $repos_dir/$repo > /dev/null
 
     echo
     git stash --include-untracked > /dev/null
-    git checkout master
-    git pull origin master
+    git checkout main
+    git pull origin main
     git fetch --all > /dev/null
     echo
 
@@ -86,7 +87,7 @@ The line that sources messaging:
 
 ```
 . .messaging
-``` 
+```
 
 can be found in my [.dotfiles](https://github.com/luisfcolon/dotfiles/blob/master/.dotfiles/.messaging) repo.
 
