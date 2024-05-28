@@ -2,7 +2,7 @@
 
 ## Create db
 
-For simple dataabse management on you local machine, I strongly recommed installing [PostgreApp](https://postgresapp.com/)
+For simple database management on you local machine, I strongly recommed installing [PostgreApp](https://postgresapp.com/)
 
 ```
 createdb cthulhu -U $USER
