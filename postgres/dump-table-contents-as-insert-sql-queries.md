@@ -2,9 +2,9 @@
 
 ## Create db
 
-```
-brew install postgresql
+For simple dataabse management on you local machine, I strongly recommed installing [PostgreApp](https://postgresapp.com/)
 
+```
 createdb cthulhu -U $USER
 ```
 
